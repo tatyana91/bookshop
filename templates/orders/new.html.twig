@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Orders{% endblock %}
+
+{% block container %}
+    <h1>Оформление заказа</h1>
+
+    <h3>Позиции заказа:</h3>
+    {% if books|length %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>{{ 'Title'|trans }}</th>
+                <th>{{ 'Quantity'|trans }}</th>
+                <th>{{ 'Price'|trans }}</th>
+                <th>{{ 'Cost'|trans }}</th>
+                <th>{{ 'Delete'|trans }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for book in books %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.quantity }}</td>
+                    <td>{{ book.price }}</td>
+                    <td>{{ book.cost }}</td>
+                    <td>
+                        <a class="btn btn-primary" href="{{ path('basket_delete', {'idbook': book.idbook}) }}">{{ 'delete'|trans }}</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="6">{{ 'no records found'|trans }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <h3>Данные для создания заказа:</h3>
+        {{ include('orders/_form.html.twig') }}
+
+    {% else %}
+        <div>В вашей корзине еще ничего нет</div>
+    {% endif %}
+
+    <a class="btn btn-primary" href="{{ path('basket') }}">В корзину</a>
+{% endblock %}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Idbook</source>
+        <target>№</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Title</source>
+        <target>Название</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Author</source>
+        <target>Автор</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Price</source>
+        <target>Цена</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Genre</source>
+        <target>Жанр</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Book</source>
+        <target>Книга</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>back to list</source>
+        <target>Вернуться к списку</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>edit</source>
+        <target>Редактировать</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>New Book</source>
+        <target>Добавление книги</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Create new Book</source>
+        <target>Добавить книгу</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Book index</source>
+        <target>Книги</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>show</source>
+        <target>Подробнее</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>no records found</source>
+        <target>Ничего не найдено</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Create new</source>
+        <target>Создать книгу</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Edit Book</source>
+        <target>Редактирование книги</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Delete</source>
+        <target>Удалить</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Are you sure you want to delete this item?</source>
+        <target>Вы уверены, что хотите удалить эту книгу?</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Save</source>
+        <target>Сохранить</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Update</source>
+        <target>Сохранить</target>
+      </trans-unit>
+      <trans-unit id="buy">
+        <source>buy</source>
+        <target>Купить</target>
+      </trans-unit>
+      <trans-unit id="actions">
+        <source>actions</source>
+        <target>Управление</target>
+      </trans-unit>
+      <trans-unit id="Genries">
+        <source>Genries</source>
+        <target>Жанры</target>
+      </trans-unit>
+      <trans-unit id="Cart">
+        <source>Cart</source>
+        <target>Корзина</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>delete</source>
+        <target>Удалить</target>
+      </trans-unit>
+      <trans-unit id="Quantity">
+        <source>Quantity</source>
+        <target>Количество</target>
+      </trans-unit>
+      <trans-unit id="Cost">
+        <source>Cost</source>
+        <target>Стоимость</target>
+      </trans-unit>
+      <trans-unit id="Create order">
+        <source>Create order</source>
+        <target>Создать заказ</target>
+      </trans-unit>
+      <trans-unit id="Name">
+           <source>Name</source>
+           <target>Имя</target>
+         </trans-unit>
+         <trans-unit id="Address">
+           <source>Address</source>
+           <target>Адрес</target>
+         </trans-unit>
+         <trans-unit id="Phone">
+           <source>Phone</source>
+           <target>Телефон</target>
+         </trans-unit>
+         <trans-unit id="Send order">
+           <source>Send order</source>
+           <target>Отправить заказ</target>
+         </trans-unit>
+      </body>
+  </file>
+</xliff>

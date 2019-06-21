@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'Book'|trans }}{% endblock %}
+
+{% block container %}
+    <h1>{{ 'Book'|trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{ 'Idbook'|trans }}</th>
+                <td>{{ book.idbook }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'Title'|trans }}</th>
+                <td>{{ book.title }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'Author'|trans }}</th>
+                <td>{{ book.author }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'Price'|trans }}</th>
+                <td>{{ book.price }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'Genre'|trans }}</th>
+                <td>{{ book.genre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('book_index') }}">{{ 'back to list'|trans }}</a>
+
+    <a class="btn btn-primary" href="{{ path('book_edit', {'idbook': book.idbook}) }}">{{ 'edit'|trans }}</a>
+
+    {{ include('book/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Каталог{% endblock %}
+
+{% block container %}
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>{{ 'Book index'|trans }}</h1>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>{{ 'Idbook'|trans }}</th>
+                    <th>{{ 'Title'|trans }}</th>
+                    <th>{{ 'Author'|trans }}</th>
+                    <th>{{ 'Price'|trans }}</th>
+                    <th>{{ 'Genre'|trans }}</th>
+                    <th>{{ 'actions'|trans }}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for book in books %}
+                    <tr>
+                        <td>{{ book.idbook }}</td>
+                        <td>{{ book.title }}</td>
+                        <td>{{ book.author }}</td>
+                        <td>{{ book.price }}</td>
+                        <td>{{ book.genre }}</td>
+                        <td>
+                            <a class="btn btn-success" href="{{ path('book_buy', {'idbook': book.idbook}) }}">{{ 'buy'|trans }}</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="6">{{ 'no records found'|trans }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <h2>
+                    <a href="/basket" style="color: #000">{{ 'Cart'|trans }}:</a>
+                    {{ cart_count }}
+            </h2>
+            <h2>{{ 'Genries'|trans }}</h2>
+            <ul>
+                <li>
+                    <a href="#">Классика</a>
+                </li>
+                <li>
+                    <a href="#">Программирование</a>
+                </li>
+                <li>
+                    <a href="#">Верстка</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
